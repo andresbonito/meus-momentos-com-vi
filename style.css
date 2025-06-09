@@ -43,3 +43,14 @@ footer {
   background-color: #f8bbd0;
   border-top: 4px solid #f48fb1;
 }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
